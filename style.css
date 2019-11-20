@@ -1,0 +1,841 @@
+
+  .x-large {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .large {
+    font-size: 1rem;
+ 
+    font-weight: bold;
+  }
+  
+  .lead {
+    font-size: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+  .tiny {
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  @media only screen and (min-device-width: 768px){
+    .x-large {
+      font-size: 2.5rem;
+    }
+    
+    .large {
+      font-size: 1.5rem;
+    }
+    
+    .lead {
+      font-size: 1.2rem;
+
+    }
+    .tiny {
+      font-size: 1rem;
+    }
+  }
+  
+  .text-primary {
+    color: $primary-color;
+  }
+  
+  .round-img {
+    border-radius: 50%;
+  }
+  
+  .line {
+    height: 1px;
+    background: #ccc;
+    margin: 1.5rem 0;
+  }
+  
+  .btn {
+    color: rgb(56, 21, 47);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold; 
+    margin: 1.8rem 0rem;
+    padding: 0.5rem;
+    top: 90%
+
+  }
+  .btn:hover {
+    color: coral;
+  }
+
+  .dark-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(216, 215, 215, 0.4);
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  display: block;
+  padding-bottom: 3.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Navigation menu Styling*/
+.navbar {
+    font-size: 1.1rem;
+    background: #F2F3EB;
+    border: solid 1px #000;
+
+}
+  
+  .main-nav {
+    list-style-type: none;
+    display: none;
+  }
+  
+  .nav-link{
+      font-size: 1.5rem;
+  }
+  
+  .nav-link,
+  .logo {
+    text-decoration: none;
+    color: darkgray;
+  }
+  .logo:hover {
+    color: #000;
+    transition: 0.5s;
+  }
+  .main-nav li {
+    text-align: center;
+    margin: 0.3rem auto;
+  }
+  
+  .logo {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 0.6rem;
+    margin-left: 1.2rem;
+  }
+  
+  .navbar-toggle {
+    position: absolute;
+    top: 1.5rem;
+    right: 20px;
+    cursor: pointer;
+    color: darkgray;
+    font-size: 2rem;
+  }
+  
+  .active {
+    display: block;
+  }
+  @media only screen and (min-device-width: 768px){
+    .logo {
+
+      margin-top: 0.3rem;
+      margin-left: 0.6rem;
+    }
+    .navbar-toggle {
+      top: 1rem;
+      right: 1.5rem;
+    }
+  }
+
+  /* Landing Page Styling*/
+
+  .landing {
+      position: relative;
+      background: url(/img/clouds-cold-color-2088206.jpg) no-repeat center center/cover;
+      height: 40vh;
+      width: 100vw;
+      color: aliceblue;
+  }
+
+  .landing-text {
+    position: relative;
+    text-align: left;
+      width: 70vw;
+      height: 40vh;
+      top: 5%;
+      left: 7.5%;
+      color: #000;
+  }
+
+  /* Blog Posts Section Styling*/
+.card img {
+  width: 100%;
+  box-shadow: 7px 9px 37px 8px rgba(0,0,0,0.75);
+}
+.card {
+  background:  #fcf7fa;
+  flex-basis: calc(99% - 20px); 
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+
+.category {
+  display: inline-block;
+  color: #000;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+
+#home-articles .articles-container {
+  display: flex;
+  flex-wrap: wrap;                  
+  justify-content: center; 
+  background:  #fcf7fa;
+  padding: 0.5rem;
+}
+
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+#article .meta .category {
+  margin-top: 0.4rem;
+}
+
+#home-articles h2 {
+  color: #000;
+  background:  #fcf7fa;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.title {
+  color: #000;
+  text-decoration: none;
+}
+
+
+
+/* Foooter Part styling*/
+
+
+#main-footer {
+  background: #F2F3EB;
+  color: #000;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding-top: 1.5rem;
+}
+#main-footer p {
+  margin: 0; 
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.simple-subscription-form{
+font-size: 1rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+margin-bottom: 1.5rem;
+}
+.simple-subscription-form form {
+  padding-top: 0.5rem;
+}
+.simple-subscription-form form .btn {
+  color: #000;
+}
+.input-group-field {
+  height: 2rem;
+}
+.input-box{
+  height: 2rem;
+}
+.socials a {
+  color: #000;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.info i {
+  margin: 1rem;
+  font-size: 1.3rem;
+  
+  box-shadow: 7px 9px 37px 8px rgba(0,0,0,0.75);
+}
+/*Desktop Version*/
+@media only screen and (min-device-width: 768px){
+
+  .landing {
+    height: 80vh;
+    width: 100%;
+}
+
+.landing-text {
+    width: 60vw;
+    height: 40vh;
+    top: 15%;
+    left: 7.5%;
+}
+#container {
+  display: flex;
+  flex-wrap: wrap;                  
+  justify-content: center;         
+}
+
+.card {
+  flex-basis: calc(33.33% - 20px); 
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box;     
+}
+#home-articles .articles-container {
+  display: flex;
+  flex-wrap: wrap;                  
+  justify-content: center;   
+  background:  #fcf7fa;
+  padding: 5.5rem;
+}
+.card img {
+height: 35vh;
+}
+.title:hover {
+ color: palevioletred;
+}
+.socials a:hover {
+  color: palevioletred;
+}
+}
+/* Blog page styling */
+.blog-post {
+  display: none;
+}
+.btn-load {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: palevioletred;
+}
+
+
+/* About page styling */
+.about {
+  background: rgb(199, 156, 158);
+  color: #fff;
+}
+.about .title {
+  text-align: center;
+  margin: 0.5rem;
+  padding-bottom: 1.8rem;
+}
+.about-text {
+  text-align: center;
+  margin: 0 0.3rem;
+  padding-bottom: 1.5rem; 
+}
+.profile-pic {
+  position: relative;
+  width: 100%;
+}
+
+.work {
+  background: rgb(122, 92, 94);
+  text-align: center;
+  padding: 1rem 0;
+}
+.work .title-uno {
+  color: #fff;
+  padding-bottom: 0.5rem;
+  
+}
+.favorite li{
+  padding: 1rem 0;
+}
+.favorite li a {
+  color: #fff;
+  text-decoration: none;
+ 
+}
+.favorite li a i {
+  color: gold;
+  font-size: 2rem;
+  padding: 0.3rem;
+}
+#experience {
+  height: auto;
+  background: rgb(199, 156, 158);
+}
+#experience h2 {
+ text-align: center;
+ margin-bottom: 2rem;
+}
+.works {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 3.5rem;
+  align-items: center;
+  justify-items: center;
+}
+.circle {
+  position: relative;
+  color: 000;
+  background-color: #fff;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+}
+.work-text {
+	position: relative;
+	background: #c0c0c0;
+  border-radius: .4em;
+  margin: 1rem;
+}
+.work-text h3,p {
+  padding: 0.5rem;
+}
+
+.work-text:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 33px solid transparent;
+	border-right-color: #c0c0c0;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -16.5px;
+	margin-left: -33px;
+}
+@media only screen and (min-device-width: 768px){
+.about {
+  text-align: center;
+}
+  .profile-pic {
+    width: 40%;
+   height: 60vh;
+   padding: 0.5rem;
+   border-radius: 13.333%;
+  }
+  .about .title {
+    padding-bottom: 1rem;
+  }
+  .about-text {
+    padding: 0 5rem 5rem 5rem;
+  }
+
+  .work-year {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 2.5rem;
+    flex-basis: calc(25% - 20px); 
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;     
+  }
+  }
+  .works {
+    display: flex;
+    flex-wrap: wrap;                  
+    justify-content: center;   
+  }
+  .circle {
+    font-size: 2rem;
+    width: 9rem;
+    height: 9rem;
+    margin-right: 0rem;
+    margin-bottom: 0.5rem;
+  }
+  .work-text {
+    position: relative;
+    background: #c0c0c0;
+    border-radius: .4em;
+    margin: 1rem;
+    flex-basis: calc(50% - 20px); 
+    align-items: center;
+    justify-content: flex-start;
+    
+    box-sizing: border-box;     
+  }
+  }
+  .work-text h3,p {
+    padding: 0.5rem;
+  }
+  
+  .work-text:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 33px solid transparent;
+    border-right-color: #c0c0c0;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -16.5px;
+    margin-left: -33px;
+  }
+}
+
+/* Contact Page Styling  */
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  border: solid 3px #474544;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+.contact-title {
+  color: #474544;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.icon {
+  font-size: 3rem;
+  display: block;
+  fill: #474544;
+  height: 4rem;
+  margin: 0 auto;
+  width: 4rem;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'],[type="password"], [type='email'], select, textarea {             
+	background: none;
+  border: none;
+	border-bottom: solid 2px #474544;
+	color: #474544;
+	font-size: 0.7em;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #474544;
+}
+
+:-moz-placeholder { 
+	color: #474544;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #474544;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #474544;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #474544;
+  color: #F2F3EB;
+}
+
+
+
+
+
+
+/* TEEEEEEEEEEEEEEEEEEEEEEEEEST*/
+
+           /* Set a style for all buttons */
+           button {
+            background-color: rgb(208, 161, 212);
+            color: #000;
+            font-weight: bold;
+            padding: 0.3rem 1rem;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+          }
+          
+          button:hover {
+            opacity:1;
+          }
+          
+          /* Extra styles for the cancel button */
+          .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+          }
+          
+          /* Float cancel and signup buttons and add an equal width */
+          .cancelbtn, .signupbtn {
+            width: 100%;
+          }   
+          /* Style the horizontal ruler */
+          hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+          }
+    
+    
+          /* Clear floats */
+          .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          
+   .LName{
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+      }
+         /* Add a background color when the inputs get focus */
+         .LName:focus{
+        background-color: #ddd;
+        outline: none;
+      }
+
+      .container {
+        padding: 16px;
+      }
+      
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+      
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+      }
+      
+      /* Modal Content/Box */
+      .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        padding-bottom: 5rem;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+      /* The Close Button (x) */
+      .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: red;
+        cursor: pointer;
+      }
+      
+      /* Add Zoom Animation */
+      .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+      }
+      
+      @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)} 
+        to {-webkit-transform: scale(1)}
+      }
+        
+      @keyframes animatezoom {
+        from {transform: scale(0)} 
+        to {transform: scale(1)}
+      }
+      
+      /* Change styles for span and cancel button on extra small screens */
+      @media screen and (max-width: 300px) {
+        span.psw {
+           display: block;
+           float: none;
+        }
+        .cancelbtn {
+           width: 100%;
+        }
+      }
+      @media only screen and (min-device-width: 768px){
+        .modal-content {
+          background-color: #fefefe;
+          margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+          padding-bottom: 5rem;
+          border: 1px solid #888;
+          width: 40%; /* Could be more or less, depending on screen size */
+        }
+      }
+
+
+
+
+    
